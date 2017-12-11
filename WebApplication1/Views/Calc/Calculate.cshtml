@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Result";
+}
+
+<h2>Calculate</h2>
+<h3>@ViewBag.Message</h3>
+
+@using (Html.BeginForm("Calculator", "Calc"))
+{
+    <button type="submit" value="Back">Back to calculator</button>
+}
+
