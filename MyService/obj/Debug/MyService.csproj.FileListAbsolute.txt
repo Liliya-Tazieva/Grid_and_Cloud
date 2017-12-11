@@ -1,8 +1,0 @@
-C:\Users\Лилия\source\repos\WindowsFormsApp1\MyService\bin\MyService.dll.config
-C:\Users\Лилия\source\repos\WindowsFormsApp1\MyService\bin\MyService.dll
-C:\Users\Лилия\source\repos\WindowsFormsApp1\MyService\bin\MyService.pdb
-C:\Users\Лилия\source\repos\WindowsFormsApp1\MyService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\Лилия\source\repos\WindowsFormsApp1\MyService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Лилия\source\repos\WindowsFormsApp1\MyService\obj\Debug\MyService.csproj.CoreCompileInputs.cache
-C:\Users\Лилия\source\repos\WindowsFormsApp1\MyService\obj\Debug\MyService.dll
-C:\Users\Лилия\source\repos\WindowsFormsApp1\MyService\obj\Debug\MyService.pdb
