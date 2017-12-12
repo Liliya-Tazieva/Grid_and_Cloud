@@ -16,6 +16,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebAppli
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestWebApplication1", "UnitTestWebApplication1\UnitTestWebApplication1.csproj", "{CEF5746B-8FEB-4F59-BDF4-2A47B5A400CC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{77E7A487-C3D2-4EA0-96B2-D9C6D88EFA6E} = {77E7A487-C3D2-4EA0-96B2-D9C6D88EFA6E}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
