@@ -56,7 +56,7 @@ namespace UnitTestWebApplication1
             Assert.AreEqual("Incorrect first parameter", result.ViewBag.Message);
         }
         
-        /*[TestMethod]
+        [TestMethod]
         public void TestMethodCalculate5()
         {
             //Arrange
@@ -77,6 +77,6 @@ namespace UnitTestWebApplication1
             //Assert
             Assert.IsNotNull(result);
             Assert.AreEqual("65.7", result.ViewBag.Message);
-        }*/
+        }
     }
 }

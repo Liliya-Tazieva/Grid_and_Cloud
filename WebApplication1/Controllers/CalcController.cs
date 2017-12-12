@@ -4,7 +4,6 @@ using System.Globalization;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using WebApplication1.MathService;
 
 namespace WebApplication1.Controllers
 {
@@ -17,7 +16,6 @@ namespace WebApplication1.Controllers
 
         public ActionResult Calculate(string FirstVariable, string SecondVariable, string action)
         {
-            var client = new MathServiceClient();
             string result = "";
             if (!Double.TryParse(FirstVariable.Replace(',', '.'), out var firstVar))
             {
@@ -36,16 +34,16 @@ namespace WebApplication1.Controllers
             switch (action)
             {
                 case "Add":
-                    result = client.Add(firstVar, secondVar).ToString(CultureInfo.InvariantCulture);
+                    result = (firstVar + secondVar).ToString(CultureInfo.InvariantCulture);
                     break;
                 case "Sub":
-                    result = client.Sub(firstVar, secondVar).ToString(CultureInfo.InvariantCulture);
+                    result = (firstVar - secondVar).ToString(CultureInfo.InvariantCulture);
                     break;
                 case "Mult":
-                    result = client.Mul(firstVar, secondVar).ToString(CultureInfo.InvariantCulture);
+                    result = (firstVar * secondVar).ToString(CultureInfo.InvariantCulture);
                     break;
                 default:
-                    result = SecondVariable != "0" ? client.Div(firstVar, secondVar).ToString(CultureInfo.InvariantCulture) 
+                    result = SecondVariable != "0" ? (firstVar / secondVar).ToString(CultureInfo.InvariantCulture) 
                         : "Incorrect parameters";
                     break;
             }
