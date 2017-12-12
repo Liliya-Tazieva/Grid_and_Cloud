@@ -62,10 +62,10 @@ namespace UnitTestWebApplication1
             //Arrange
             var controller = new CalcController();
             //Act
-            var result = controller.Calculate("25","43", "Add") as ViewResult;
+            var result = controller.Calculate("25","5", "Sub") as ViewResult;
             //Assert
             Assert.IsNotNull(result);
-            Assert.AreEqual("68",result.ViewBag.Message);
+            Assert.AreEqual("20",result.ViewBag.Message);
         }
         [TestMethod]
         public void TestMethodCalculate6()
