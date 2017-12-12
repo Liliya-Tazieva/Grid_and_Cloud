@@ -1,12 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Web.Mvc;
-using WebApplication1;
 using WebApplication1.Controllers;
-using WcfCalcApplication;
 
 namespace UnitTestWebApplication1
 {
@@ -19,12 +14,12 @@ namespace UnitTestWebApplication1
             //Arrange
             var controller = new CalcController();
             //Act
-            var result = controller.Calculate("22","43", "Add") as ViewResult;
+            var result = controller.Calculate("25","43", "Add") as ViewResult;
             //Assert
             Assert.IsNotNull(result);
-            Assert.AreEqual("65",result.ViewBag.Message);
+            Assert.AreEqual("68",result.ViewBag.Message);
         }
-
+        
         [TestMethod]
         public void TestMethodCalculate2()
         {

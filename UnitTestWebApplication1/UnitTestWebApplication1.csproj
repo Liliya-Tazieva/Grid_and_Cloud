@@ -94,10 +94,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WcfCalcApplication\WcfCalcApplication.csproj">
-      <Project>{77e7a487-c3d2-4ea0-96b2-d9c6d88efa6e}</Project>
-      <Name>WcfCalcApplication</Name>
-    </ProjectReference>
     <ProjectReference Include="..\WebApplication1\WebApplication1.csproj">
       <Project>{aa1d3e0c-eef0-4944-9ee4-de76519e347e}</Project>
       <Name>WebApplication1</Name>
