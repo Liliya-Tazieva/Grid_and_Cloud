@@ -4,5 +4,7 @@ before_build:
 build:
   verbosity:minimal
 test:
+  # only assemblies to test
   assemblies:
-  UnitTestWebApplication1\bin\Release\UnitTestWebApplication1.dll
+    only:
+      - UnitTestWebApplication1\bin\Release\UnitTestWebApplication1.dll
