@@ -3,3 +3,6 @@ before_build:
   - nuget restore
 build:
   verbosity:minimal
+test:
+  assemblies:
+  UnitTestWebApplication1\bin\Release\UnitTestWebApplication1.dll
