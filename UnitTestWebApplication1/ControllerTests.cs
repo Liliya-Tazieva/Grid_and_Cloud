@@ -21,7 +21,7 @@ namespace UnitTestWebApplication1
         }*/
         
         [TestMethod]
-        public void TestMethodCalculate2()
+        public void TestMethodCalculate1()
         {
             //Arrange
             var controller = new CalcController();
@@ -33,7 +33,7 @@ namespace UnitTestWebApplication1
         }
 
         [TestMethod]
-        public void TestMethodCalculate3()
+        public void TestMethodCalculate2()
         {
             //Arrange
             var controller = new CalcController();
@@ -45,7 +45,7 @@ namespace UnitTestWebApplication1
         }
 
         [TestMethod]
-        public void TestMethodCalculate4()
+        public void TestMethodCalculate3()
         {
             //Arrange
             var controller = new CalcController();
@@ -69,7 +69,7 @@ namespace UnitTestWebApplication1
         }*/
         
         [TestMethod]
-        public void TestMethodCalculate6()
+        public void TestMethodCalculate4()
         {
             //Arrange
             var controller = new CalcController();
