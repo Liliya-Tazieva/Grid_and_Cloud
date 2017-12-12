@@ -8,18 +8,6 @@ namespace UnitTestWebApplication1
     [TestClass]
     public class ControllerTests
     {
-        /*[TestMethod]
-        public void TestMethodCalculate1()
-        {
-            //Arrange
-            var controller = new CalcController();
-            //Act
-            var result = controller.Calculate("25","43", "Add") as ViewResult;
-            //Assert
-            Assert.IsNotNull(result);
-            Assert.AreEqual("68",result.ViewBag.Message);
-        }*/
-        
         [TestMethod]
         public void TestMethodCalculate1()
         {
@@ -56,18 +44,6 @@ namespace UnitTestWebApplication1
             Assert.AreEqual("Incorrect parameters", result.ViewBag.Message);
         }
         
-        /*[TestMethod]
-        public void TestMethodCalculate5()
-        {
-            //Arrange
-            var controller = new CalcController();
-            //Act
-            var result = controller.Calculate("22,4", "43,3", "Add") as ViewResult;
-            //Assert
-            Assert.IsNotNull(result);
-            Assert.AreEqual("65.7", result.ViewBag.Message);
-        }*/
-        
         [TestMethod]
         public void TestMethodCalculate4()
         {
@@ -78,6 +54,29 @@ namespace UnitTestWebApplication1
             //Assert
             Assert.IsNotNull(result);
             Assert.AreEqual("Incorrect first parameter", result.ViewBag.Message);
+        }
+        
+        [TestMethod]
+        public void TestMethodCalculate5()
+        {
+            //Arrange
+            var controller = new CalcController();
+            //Act
+            var result = controller.Calculate("25","43", "Add") as ViewResult;
+            //Assert
+            Assert.IsNotNull(result);
+            Assert.AreEqual("68",result.ViewBag.Message);
+        }
+        [TestMethod]
+        public void TestMethodCalculate6()
+        {
+            //Arrange
+            var controller = new CalcController();
+            //Act
+            var result = controller.Calculate("22,4", "43,3", "Add") as ViewResult;
+            //Assert
+            Assert.IsNotNull(result);
+            Assert.AreEqual("65.7", result.ViewBag.Message);
         }
     }
 }
