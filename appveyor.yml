@@ -1,7 +1,0 @@
-version: 1.0.{build}
-before_build:
-- cmd: dnu restore
-test_script:
-- cmd: dnx -p UnitTestWebApplication1 test
-build:
-  verbosity: normal
