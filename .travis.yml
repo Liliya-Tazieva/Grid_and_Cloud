@@ -2,5 +2,7 @@ language: csharp
 solution: WindowsFormsApp1.sln
 install:
   - nuget restore WindowsFormsApp1.sln
+  - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
 script:
   - xbuild /p:Configuration=Release WindowsFormsApp1.sln
+  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./UnitTestWebApplication1/bin/Release/UnitTestWebApplication1.dll
