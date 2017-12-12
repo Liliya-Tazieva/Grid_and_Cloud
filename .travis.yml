@@ -1,10 +1,4 @@
-language: csharp  
+language: csharp
 solution: WindowsFormsApp1.sln
-sudo: required  
-dist: trusty  
-mono: none
-dotnet: 2.0.0-preview2-006497
-before_script:
-  - dotnet restore
 script:  
   - dotnet test ./UnitTestWebApplication1 -c Release
